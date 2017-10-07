@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>849</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QFrame" name="frameTab1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>161</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btnMenuRefresh">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>刷新</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tvMenu">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>141</width>
+       <height>121</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMenuDelete">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除项</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMenuNew">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>新建项</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTab1">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>180</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>11111111</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMenuTotal">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMenuNum1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMenuNum2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMenuNum3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMenuNum4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMenuNum5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditFind">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>输入菜品名称</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnFindNext">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>查找下一个</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnFindLast">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>查找上一个</string>
+     </property>
+    </widget>
+    <zorder>labelTab1</zorder>
+    <zorder>btnMenuRefresh</zorder>
+    <zorder>tvMenu</zorder>
+    <zorder>btnMenuDelete</zorder>
+    <zorder>btnMenuNew</zorder>
+    <zorder>labelMenuTotal</zorder>
+    <zorder>labelMenuNum1</zorder>
+    <zorder>labelMenuNum2</zorder>
+    <zorder>labelMenuNum3</zorder>
+    <zorder>labelMenuNum4</zorder>
+    <zorder>labelMenuNum5</zorder>
+    <zorder>lineEditFind</zorder>
+    <zorder>btnFindNext</zorder>
+    <zorder>btnFindLast</zorder>
+   </widget>
+   <widget class="QFrame" name="frameTab3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>151</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTableView" name="tvGuest">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>141</width>
+       <height>111</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnGuestRefresh">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>刷新</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnGuestNew">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>新建项</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnGuestDelete">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除项</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTab3">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>170</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>33333</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelGuestCount">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <zorder>labelTab3</zorder>
+    <zorder>tvGuest</zorder>
+    <zorder>btnGuestRefresh</zorder>
+    <zorder>btnGuestNew</zorder>
+    <zorder>btnGuestDelete</zorder>
+    <zorder>labelGuestCount</zorder>
+   </widget>
+   <widget class="QFrame" name="frameTab4">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>10</y>
+      <width>141</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTableView" name="tvOther">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>121</width>
+       <height>111</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnOtherRefresh">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>刷新</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnOtherNew">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>新建项</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnOtherDelete">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除项</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTab4">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>170</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>444444</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelOtherCount">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelOtherNum1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelOtherNum2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelOtherNum3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <zorder>labelTab4</zorder>
+    <zorder>tvOther</zorder>
+    <zorder>btnOtherRefresh</zorder>
+    <zorder>btnOtherNew</zorder>
+    <zorder>btnOtherDelete</zorder>
+    <zorder>labelOtherCount</zorder>
+    <zorder>labelOtherNum1</zorder>
+    <zorder>labelOtherNum2</zorder>
+    <zorder>labelOtherNum3</zorder>
+   </widget>
+   <widget class="QFrame" name="frameTab2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>151</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTableView" name="tvTable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>131</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnTableRefresh">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>刷新</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnTableNew">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>新建项</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnTableDelete">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除项</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTab2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>220</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>222222</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTableCount">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTableNum">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <zorder>labelTab2</zorder>
+    <zorder>tvTable</zorder>
+    <zorder>btnTableRefresh</zorder>
+    <zorder>btnTableNew</zorder>
+    <zorder>btnTableDelete</zorder>
+    <zorder>labelTableCount</zorder>
+    <zorder>labelTableNum</zorder>
+   </widget>
+   <widget class="QFrame" name="frameTab5">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>10</y>
+      <width>191</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="lineEditChangeName">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>10</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChangeNewpw">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>新密码：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChangeName">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>新用户名：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnChange">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>170</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>修改</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditNewpw">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditConfirmpw">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>140</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChangeConfirm">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确认密码：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditChangepw">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>50</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelChangeOldpw">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>旧密码：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTab5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>240</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>55555</string>
+     </property>
+    </widget>
+    <zorder>labelTab5</zorder>
+    <zorder>lineEditChangeName</zorder>
+    <zorder>labelChangeNewpw</zorder>
+    <zorder>labelChangeName</zorder>
+    <zorder>btnChange</zorder>
+    <zorder>lineEditNewpw</zorder>
+    <zorder>lineEditConfirmpw</zorder>
+    <zorder>labelChangeConfirm</zorder>
+    <zorder>lineEditChangepw</zorder>
+    <zorder>labelChangeOldpw</zorder>
+   </widget>
+   <widget class="QPushButton" name="btnClose">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>360</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMin">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>360</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelUsername">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>390</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
